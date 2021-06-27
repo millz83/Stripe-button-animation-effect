@@ -1,0 +1,65 @@
+*{
+    box-sizing: inherit;
+}
+
+body {
+    background: #000;
+}
+
+html,body {
+    min-height:100%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+
+}
+
+.btn {
+    width:250px;
+    height:50px;
+    font-size:25px;
+    font-family: sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color:whitesmoke;
+    background-size:50px 50px;
+    overflow: hidden;
+    border-radius:50px;
+    outline: none;
+    transition:0.8s;
+
+
+}
+
+.btn:hover {
+    text-shadow: 3px 1px 5px #333;
+    color:#fff;
+    transition:0.8s;
+    animation: strip 6s linear infinite;
+
+}
+
+.one {
+    background-image:linear-gradient(45deg, #52e6eb 16.67%,
+    #80065b 16.67%, #80065b 33.33%, #52e6eb 33.33%, #52e6eb
+    50%, #52e6eb 50%, #52e6eb 66.67%, #80065b 66.67%, #80065b 83.3%, #52e6eb 83.33%,
+    #52e6eb 100%);
+}
+
+.two {
+    background-image:linear-gradient(45deg, #52e6eb 16.67%,
+    #f032a7 16.67%, #f032a7 33.33%, #52e6eb 33.33%, #52e6eb
+    50%, #52e6eb 50%, #52e6eb 66.67%, #f032a7 66.67%, #f032a7 83.3%, #52e6eb 83.33%,
+    #52e6eb 100%);
+}
+
+@keyframes strip {
+    0% {background-position: 0% 0%}
+    50%{background-position: 50% 0%}
+    100%{background-position: 100% 0%}
+    }
+
+}
